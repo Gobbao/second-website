@@ -9,9 +9,12 @@
 @import "base/base";
 
 // Components
+@import "styles/components/footer";
+@import "styles/components/form";
 @import "styles/components/icon";
 @import "styles/components/tabs";
 
 // Page
 @import "styles/page/home";
 @import "styles/page/work";
+@import "styles/page/contact";

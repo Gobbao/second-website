@@ -39,6 +39,14 @@ a {
     &:hover {
         cursor: pointer;
     }
+
+    &:link {
+        color: $color-footer--base;
+    }
+
+    &:visited {
+        color: $color-footer--base;
+    }
 }
 
 p {

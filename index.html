@@ -28,7 +28,7 @@
                         <h1 class="home__title">Jane Doe</h1>
                         <p class="home__text">Senior Astral Projectionist</p>
                     </header>
-                    <a href="#folder" class="home__link">
+                    <a href="#work" class="home__link">
                         <span class="home__arrow">
                             <span class="icon icon--r-arrow icon--box"></span>
                         </span>
@@ -36,7 +36,7 @@
                     </a>
                 </div>
 
-                <div class="tabs__content__tab tabs__content__tab--work">
+                <div id="work" class="tabs__content__tab tabs__content__tab--work">
                     <header class="header header--align-left header--mrg-btm">
                         <h1 class="work__title">Work</h1>
                         <p class="work__text">
@@ -61,15 +61,32 @@
                     </div>
                 </div>
 
-                <div class="tabs__content__tab">
-                    <h1>Tab 3</h1>
+                <div class="tabs__content__tab tabs__content__tab--contact">
+                    <header class="header header--width header--align-left header--mrg-btm">
+                        <h1 class="contact__title">Contact me</h1>
+                    </header>
+
                     <form class="form">
-                        <div class="form__group"></div>
+                        <div class="form__group">
+                            <input class="form__input form__input--mrg-right" type="text" placeholder="Name">
+                            <input class="form__input form__input--mrg-left" type="text" placeholder="Email">
+                        </div>
+                        <input class="form__input" type="text" placeholder="Subject">
+                        <textarea class="form__input" placeholder="Message" rows="8"></textarea>
+                        <div class="form__group">
+                            <input class="form__input form__input--submit" type="submit" value="Send Message">
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
 
-        <div class="footer"></div>
+        <div class="footer">
+            <ul class="footer__list">
+                <li class="footer__list__item">© Untitled.</li>
+                <li class="footer__list__item footer__list__item--with-dot">Design: <a class="link" href="">HTML5 UP</a></li>
+                <li class="footer__list__item footer__list__item--with-dot">Demo Images: <a class="link" href="">Unsplash</a></li>
+            </ul>
+        </div>
     </body>
 </html>
