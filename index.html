@@ -9,6 +9,67 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
     <body>
+        <div class="tabs">
+            <input type="radio" name="tab" id="home" class="tabs__input" checked>
+            <input type="radio" name="tab" id="folder" class="tabs__input">
+            <input type="radio" name="tab" id="email" class="tabs__input">
+            <input type="radio" name="tab" id="twitter" class="tabs__input">
 
+            <div class="tabs__menu">
+                <label for="home" class="icon icon--home"></label>
+                <label for="folder" class="icon icon--folder"></label>
+                <label for="email" class="icon icon--email"></label>
+                <label for="twitter" class="icon icon--twitter"></label>
+            </div>
+
+            <div class="tabs__content">
+                <div class="tabs__content__tab">
+                    <header class="header">
+                        <h1 class="home__title">Jane Doe</h1>
+                        <p class="home__text">Senior Astral Projectionist</p>
+                    </header>
+                    <a href="#folder" class="home__link">
+                        <span class="home__arrow">
+                            <span class="icon icon--r-arrow icon--box"></span>
+                        </span>
+                        <img src="/images/me.jpg" class="home__image">
+                    </a>
+                </div>
+
+                <div class="tabs__content__tab tabs__content__tab--work">
+                    <header class="header header--align-left header--mrg-btm">
+                        <h1 class="work__title">Work</h1>
+                        <p class="work__text">
+                                    Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                    luctus elit eget interdum.
+                        </p>
+                    </header>
+                    <div class="work__images">
+                        <a href="#" class="work__images__link"><img class="img" src="/images/pic01.jpg"></a>
+                        <a href="#" class="work__images__link"><img class="img" src="/images/pic02.jpg"></a>
+                        <a href="#" class="work__images__link"><img class="img" src="/images/pic03.jpg"></a>
+                        <a href="#" class="work__images__link"><img class="img" src="/images/pic04.jpg"></a>
+                        <a href="#" class="work__images__link"><img class="img" src="/images/pic05.jpg"></a>
+                        <a href="#" class="work__images__link"><img class="img" src="/images/pic06.jpg"></a>
+                        <a href="#" class="work__images__link"><img class="img" src="/images/pic07.jpg"></a>
+                        <a href="#" class="work__images__link"><img class="img" src="/images/pic08.jpg"></a>
+                        <a href="#" class="work__images__link"><img class="img" src="/images/pic09.jpg"></a>
+                        <a href="#" class="work__images__link"><img class="img" src="/images/pic10.jpg"></a>
+                        <a href="#" class="work__images__link"><img class="img" src="/images/pic11.jpg"></a>
+                        <a href="#" class="work__images__link"><img class="img" src="/images/pic12.jpg"></a>
+                    </div>
+                </div>
+
+                <div class="tabs__content__tab">
+                    <h1>Tab 3</h1>
+                    <form class="form">
+                        <div class="form__group"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer"></div>
     </body>
 </html>

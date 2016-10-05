@@ -1,0 +1,17 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+// Config
+@import "config/vars";
+@import "config/mixins";
+
+// Reset
+@import "base/base";
+
+// Components
+@import "styles/components/icon";
+@import "styles/components/tabs";
+
+// Page
+@import "styles/page/home";
+@import "styles/page/work";

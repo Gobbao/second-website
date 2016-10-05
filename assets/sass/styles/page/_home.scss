@@ -1,0 +1,49 @@
+.home {
+    &__title {
+        @include media-q {
+            font-size: 3em;
+            font-weight: 400;
+        }
+    }
+
+    &__text {
+        font-size: 1.25em;
+        margin-top: 0.5em;
+
+        @include media-q {
+            font-size: 1.8em;
+            margin-top: 0.3em;
+        }
+    }
+
+    &__link {
+        height: 370px;
+
+        @include media-q {
+            height: 400px;
+            left: 15px;
+            position: relative;
+        }
+    }
+
+    &__arrow {
+        display: none;
+
+        @include media-q {
+            background: $color-black--light;
+            display: block;
+            height: 5.5em;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 5.5em;
+        }
+    }
+
+    &__image {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}
