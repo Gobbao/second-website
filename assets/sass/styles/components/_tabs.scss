@@ -1,4 +1,4 @@
-$max_tabs: 4;
+$max_tabs: 3;
 
 .tabs {
     &__menu {
@@ -18,21 +18,26 @@ $max_tabs: 4;
                     display: flex;
                 }
 
-                &:nth-of-type(#{$i}):checked ~ .tabs__menu :nth-child(#{$i}) {
+                &:nth-of-type(#{$i}):checked ~ .tabs__menu .icon:nth-of-type(#{$i}) {
                     position: relative;
                     opacity: 1;
 
                     &:after {
                         border-style: solid;
-                        border-width: 0 30px 30px 30px;
+                        border-width: 0 25px 25px 25px;
                         border-color: transparent transparent $color-white--base transparent;
                         content: '';
                         height: 0;
                         position: absolute;
-                        transform: translate(-50%, 40%);
+                        transform: translate(-50%, 65%);
                         width: 0;
                     }
                 }
+            }
+
+            &:nth-of-type(4):checked ~ .tabs__menu .icon:nth-of-type(4) { // twitter
+                position: relative;
+                opacity: 1;
             }
         }
     }
