@@ -18,7 +18,7 @@ $max_tabs: 3;
                     display: flex;
                 }
 
-                &:nth-of-type(#{$i}):checked ~ .tabs__menu .icon:nth-of-type(#{$i}) {
+                &:nth-of-type(#{$i}):checked ~ .tabs__menu .icon:nth-child(#{$i + ($i - 1)}) {
                     position: relative;
                     opacity: 1;
 
@@ -33,11 +33,6 @@ $max_tabs: 3;
                         width: 0;
                     }
                 }
-            }
-
-            &:nth-of-type(4):checked ~ .tabs__menu .icon:nth-of-type(4) { // twitter
-                position: relative;
-                opacity: 1;
             }
         }
     }

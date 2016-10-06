@@ -1,26 +1,29 @@
 .tooltip {
       display: none;
+      position: relative;
 
-      &:before {
-            background: $color-black--light;
-            color: $color-white--base;
-            display: block;
-            height: 30px;
-            line-height: 30px;
-            position: absolute;
-            text-align: center;
-            transform: translate(-100%, -130%);
-            width: 80px;
-      }
+      @include media-q {
+            &:before {
+                  background: $color-black--light;
+                  color: $color-white--base;
+                  display: block;
+                  height: 30px;
+                  line-height: 30px;
+                  position: absolute;
+                  text-align: center;
+                  transform: translate(-100%, -130%);
+                  width: 80px;
+            }
 
-      &:after {
-            border-style: solid;
-            border-width: 7px 7px 0 7px;
-            border-color: $color-black--light transparent transparent transparent;
-            content: '';
-            height: 0;
-            position: absolute;
-            transform: translate(-338%, -130%);
-            width: 0;
+            &:after {
+                  border-style: solid;
+                  border-width: 7px 7px 0 7px;
+                  border-color: $color-black--light transparent transparent transparent;
+                  content: '';
+                  height: 0;
+                  position: absolute;
+                  transform: translate(-338%, -130%);
+                  width: 0;
+            }
       }
 }

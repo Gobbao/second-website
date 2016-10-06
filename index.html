@@ -13,7 +13,6 @@
             <input type="radio" name="tab" id="home" class="tabs__input" checked>
             <input type="radio" name="tab" id="folder" class="tabs__input">
             <input type="radio" name="tab" id="email" class="tabs__input">
-            <input type="radio" name="tab" id="twitter" class="tabs__input">
 
             <div class="tabs__menu">
                 <label for="home" class="icon icon--home"></label>
@@ -22,7 +21,7 @@
                 <span class="tooltip"></span>
                 <label for="email" class="icon icon--email"></label>
                 <span class="tooltip"></span>
-                <label for="twitter" class="icon icon--twitter"></label>
+                <a href="#twitter-modal" class="icon icon--twitter"></a>
                 <span class="tooltip"></span>
             </div>
 
@@ -81,6 +80,38 @@
                             <input class="form__input form__input--submit" type="submit" value="Send Message">
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Twitter Modal -->
+        <div id="twitter-modal" class="overlay">
+            <div class="modal">
+                <header class="modal__header">
+                    <div class="modal__header__photo">
+                        <img src="/images/me-twitter.jpg" class="home__image">
+                    </div>
+                    <div class="modal__header__logo">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                    <div class="modal__header__close">
+                        <a href="#">&times;</a>
+                    </div>
+                </header>
+                <div class="modal__content">
+                        <div class="modal__content__left">
+                                <div class="m-icon"><i class="fa fa-camera"></i></div>
+                                <div class="m-icon m-icon--margin"><i class="fa fa-camera"></i></div>
+                                <div class="m-icon m-icon--margin"><i class="fa fa-camera"></i></div>
+                        </div>
+                        <div class="modal__content__center">
+                                    <textarea class="modal__content__center__text" placeholder="What's happening ?"></textarea>
+                        </div>
+                        <div class="modal__content__right">
+                                <div class="m-icon m-icon--back-blue-light m-icon--text-blue">GIF</div>
+                                <div class="m-icon m-icon--margin m-icon--back-blue-light m-icon--text-blue"><i class="fa fa-map-marker"></i></div>
+                                <div class="m-icon m-icon--margin m-icon--back-blue"><i class="fa fa-check"></i></div>
+                        </div>
                 </div>
             </div>
         </div>

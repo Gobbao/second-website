@@ -1,0 +1,94 @@
+.modal {
+      background: $color-white--base;
+
+      width: 86vw;
+
+      &__header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            height: 50px;
+
+            color: $color-white--base;
+            line-height: 50px;
+            text-align: center;
+
+            background: $color-blue--twitter;
+
+            &__photo {
+                  flex: 1;
+            }
+
+            &__logo {
+                  flex: 3;
+                  font-size: 2em;
+            }
+
+            &__close {
+                  flex: 1;
+                  font-size: 3.5em;
+            }
+      }
+
+      &__content {
+            display: flex;
+            flex-direction: row;
+
+            .m-icon {
+                  padding: 12px 5px;
+
+                  height: 100%;
+
+                  background: $color-grey--light;
+                  color: $color-white--base;
+                  font-size: 1.5em;
+                  text-align: center;
+
+                  &--margin {
+                        margin-top: 2px;
+                  }
+
+                  &--back-blue {
+                        background: $color-blue--twitter;
+                  }
+
+                  &--back-blue-light {
+                        background: $color-blue--light;
+                  }
+
+                  &--text-white {
+                        color: $color-white--base;
+                  }
+
+                  &--text-blue {
+                        color: $color-blue--twitter;
+                  }
+            }
+
+            &__left {
+                  display: flex;
+                  flex-direction: column;
+                  flex: 1;
+             }
+
+             &__right {
+                  display: flex;
+                  flex-direction: column;
+                  flex: 1;
+             }
+
+             &__center {
+                  flex: 3;
+
+                  &__text {
+                      padding: 10px;
+                      border: none;
+                      resize: none;
+
+                      height: 100%;
+                      width: 100%;
+                  }
+             }
+      }
+}

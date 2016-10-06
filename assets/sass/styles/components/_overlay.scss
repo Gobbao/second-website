@@ -1,0 +1,17 @@
+.overlay {
+      align-items: center;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      visibility: hidden;
+
+      &:target {
+            visibility: visible;
+      }
+}
