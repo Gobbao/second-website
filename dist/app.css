@@ -42,6 +42,9 @@ a {
 p {
   color: #aaa; }
 
+textarea {
+  resize: none; }
+
 .footer {
   color: rgba(255, 255, 255, 0.45);
   padding-top: 2em;
@@ -207,6 +210,9 @@ p {
 .modal {
   background: #fff;
   width: 86vw; }
+  @media screen and (min-width: 768px) {
+    .modal {
+      width: 50vw; } }
   .modal__header {
     display: flex;
     flex-direction: row;
@@ -216,14 +222,29 @@ p {
     line-height: 50px;
     text-align: center;
     background: #55acee; }
+    @media screen and (min-width: 768px) {
+      .modal__header {
+        height: 80px;
+        line-height: 80px; } }
     .modal__header__photo {
+      background: url("/images/me-twitter.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
       flex: 1; }
     .modal__header__logo {
       flex: 3;
       font-size: 2em; }
+      @media screen and (min-width: 768px) {
+        .modal__header__logo {
+          flex: 6;
+          font-size: 3.5em; } }
     .modal__header__close {
       flex: 1;
       font-size: 3.5em; }
+      @media screen and (min-width: 768px) {
+        .modal__header__close {
+          font-size: 7em; } }
   .modal__content {
     display: flex;
     flex-direction: row; }
@@ -234,6 +255,10 @@ p {
       color: #fff;
       font-size: 1.5em;
       text-align: center; }
+      @media screen and (min-width: 768px) {
+        .modal__content .m-icon {
+          padding: 18px 5px;
+          font-size: 2.5em; } }
       .modal__content .m-icon--margin {
         margin-top: 2px; }
       .modal__content .m-icon--back-blue {
@@ -254,12 +279,19 @@ p {
       flex: 1; }
     .modal__content__center {
       flex: 3; }
+      @media screen and (min-width: 768px) {
+        .modal__content__center {
+          flex: 6; } }
       .modal__content__center__text {
         padding: 10px;
         border: none;
         resize: none;
         height: 100%;
         width: 100%; }
+        @media screen and (min-width: 768px) {
+          .modal__content__center__text {
+            padding: 15px;
+            font-size: 1.2em; } }
 
 .overlay {
   align-items: center;

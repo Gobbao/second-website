@@ -3,6 +3,10 @@
 
       width: 86vw;
 
+      @include media-q {
+            width: 50vw;
+      }
+
       &__header {
             display: flex;
             flex-direction: row;
@@ -10,24 +14,43 @@
 
             height: 50px;
 
-            color: $color-white--base;
+            color: $color-white--base; // diminuir largura
             line-height: 50px;
             text-align: center;
 
             background: $color-blue--twitter;
 
+            @include media-q {
+                  height: 80px;
+                  line-height: 80px;
+            }
+
             &__photo {
+                  background: url("/images/me-twitter.jpg");
+                  background-repeat: no-repeat;
+                  background-size: cover;
+
+                  display: block;
                   flex: 1;
             }
 
             &__logo {
                   flex: 3;
                   font-size: 2em;
+
+                  @include media-q {
+                        flex: 6;
+                        font-size: 3.5em;
+                  }
             }
 
             &__close {
                   flex: 1;
                   font-size: 3.5em;
+
+                  @include media-q {
+                        font-size: 7em;
+                  }
             }
       }
 
@@ -44,6 +67,11 @@
                   color: $color-white--base;
                   font-size: 1.5em;
                   text-align: center;
+
+                  @include media-q {
+                        padding: 18px 5px;
+                        font-size: 2.5em;
+                  }
 
                   &--margin {
                         margin-top: 2px;
@@ -81,6 +109,10 @@
              &__center {
                   flex: 3;
 
+                  @include media-q {
+                    flex: 6;
+                  }
+
                   &__text {
                       padding: 10px;
                       border: none;
@@ -88,6 +120,11 @@
 
                       height: 100%;
                       width: 100%;
+
+                      @include media-q {
+                            padding: 15px;
+                            font-size: 1.2em;
+                      }
                   }
              }
       }
